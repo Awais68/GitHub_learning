@@ -3,13 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learning GitHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAACUCAMAAAA02EJtAAAAZlBMVEX///8AAAD5+flzc3PV1dXq6ur8/Pzt7e3n5+f19fU/Pz/j4+OkpKTf399PT08oKChra2uZmZm2trZ8fHyIiIhbW1u8vLzOzs5WVlYWFhavr69iYmLIyMiOjo5EREQ0NDQhISEODg5jHsbvAAAEjklEQVR4nO2b6ZaiMBCFkVV2WUXE7f1fcgAVSSW2JG2FPmfq+zdzGnIJlcqtIhoGQRAEQRAEQRAEQRAEQRAE8TdwvTAMt56/to6f8erTsUnOQc85aZqitddWJMKP891GwOVkO2trY4gjS6TzzvlUm2sLfBIWl/dCBw5NtLbGATNOftb5IPLWVmoXi4T2BCvPbJYuVdqzi9cTap8lhA5kK2VbN5cUOkxsuIZS8ySvtM+zK+wK3rKFz5PrVhrKhumLyNWqdKs6pz03rVnLkclRgnnVp9T/xZyOaItXs/yl0s1hr0lq9FulfbxutSjtZkMG2alcFA2pVWZzu9DoSANmMBux7f9j230MiKC1e8vqza/UsbQYK/XYJ/3y+pPQ7nHpfH+74odrd5iNV00mNLw/QZocrWJkV53v8s/t9K4Z03DELg3M43y4cjZcnVhtZ4eeOSpzfSe2u7YIyplB6Zi5r5Gl1syrzZinEKwUl5m6eB6smxuuUuPASJVcG9vz+wf9OsCiSkoFHifBLLvZSJWeFztgL29xVI507PvfFHKruAMprcKrX1xo/AO5V9iCyzd4JYHDtSakalDe5pRYSo09GOkmmRptzubi6DTAnjqEquwNaigVLQLgQPLuqNIUAQ4YRyHXbMEtqu+rHAH5P1VomLlgZQVILQwQqqWKOwbReu0+X6IC2KqUnBGsynEctt8wgyi2dEB7G8eyQLOhVsmBYJXcmhdis3vVUW0DB+XuEaWZDcyGYsEB1hWOEaxZW7X7itQApSFQ374RADA5oyRWILVSi7JWi1Q2ABQzQKZDKlhWinkVbHk4sboHblOtjgdbAE4GiL9RxHnABuLkVfihQmmjga8GZ7eCvljFBHKVIFLbAjirjUIvz4Q1D1LvEuSZTSJ/ixjcAsuvwoJVoYiDJxywqgCuDNzJ1gEhvANWbWUEcCTJSDNhwYrXs+A+rUj2LPhvBmh9ALgo+mUhM5bg6waWUsOH6arXuvjDnis4OiLdnlkO18obwm3ZIu4awbWIhwMmG1CdiskSnrPP29a+vAmUIvZXJwuXDh8k8qksvO72/vu93PTa4CAQitu1nnpO2aDMm7/TY1Z3MdTr7Lu8fHteLME9evU8+Deel4GOjmsNOeLZfD4vqtJXKy8dGtYxM2Mp/+cdL/AFrtLZNjCWGkz9KbAeLp/eJrC/BhrOZLCL4XXP/MdVtLLen8VS7CPI8Oo5DFnRf2ktROaFb/8/SHUctJh2nWD8Z/TItRfhvuVwDuWBlqM2r0M298I4zrOiyPJY6Ah94VnhPrfpUDor5aYt3Hwbd6b4uHCq61TzMwUdPi9isdSrvuOhT9sSfBxSLBWpohLyrAjTT95IKBU9ozJMO0FhP+2RMF4FUheEzXd5WVcri/I6j05CBQKpupWyNvs22BJhpuSlrvELDHvJJygotVnntxdbS1rqgoIBBzOSk6p9QTFKqsNiqddy5Z+y1LuFUi2deV+MX18WSE3sv/FbMbvq1d7EBnQI58DSc7J2EXGUvXu/bdb+IaEEQRAEQRAEQRAEQRAEQRD/If8A5z0xRmerW74AAAAASUVORK5CYII=" type="image/x-icon">
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message!');
+        }
+    </script>
 </head>
-<body>
-    <h1>This is our first project</h1>
+<body class="bg-gray-100 text-gray-800">
 
-    <!-- main branch with new features  -->
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <a href="#" class="flex items-center py-4 px-2 text-white">
+                        <span class="font-semibold text-lg">Learning GitHub</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-1">
+                    <a href="#" class="py-4 px-2 text-white hover:bg-purple-700 transition duration-300 rounded">Home</a>
+                    <a href="#features" class="py-4 px-2 text-white hover:bg-purple-700 transition duration-300 rounded">Features</a>
+                    <a href="#about" class="py-4 px-2 text-white hover:bg-purple-700 transition duration-300 rounded">About</a>
+                    <a href="#contact" class="py-4 px-2 text-white hover:bg-purple-700 transition duration-300 rounded">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <!-- The same is not equal to the other one while some one is speacial ..... -->
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 py-20 text-white text-center">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold">Master GitHub with Ease</h1>
+            <p class="mt-4 text-lg md:text-2xl">Join us to learn and master GitHub, the world's leading platform for open-source projects and version control.</p>
+            <a href="#features" class="mt-8 inline-block bg-yellow-500 text-gray-800 py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-800">Features</h2>
+            <div class="mt-10 flex flex-wrap justify-center">
+                <div class="w-80 p-6 m-4 bg-yellow-100 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-800">Interactive Tutorials</h3>
+                    <p class="mt-4 text-gray-600">Learn GitHub with hands-on tutorials that guide you step-by-step.</p>
+                </div>
+                <div class="w-80 p-6 m-4 bg-green-100 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-800">Project Collaboration</h3>
+                    <p class="mt-4 text-gray-600">Collaborate on projects with others using GitHub's powerful tools.</p>
+                </div>
+                <div class="w-80 p-6 m-4 bg-blue-100 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-800">Community Support</h3>
+                    <p class="mt-4 text-gray-600">Join a community of learners and get support from experienced developers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="py-20 bg-gradient-to-r from-purple-100 via-pink-100 to-red-100">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-800">About Us</h2>
+            <p class="mt-4 text-lg text-gray-600">Learning GitHub is dedicated to helping developers of all levels master GitHub. Whether you're a beginner looking to understand version control or an experienced developer aiming to enhance your GitHub skills, we have the resources to help you succeed.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-800">Contact Us</h2>
+            <p class="mt-4 text-lg text-gray-600">Have any questions? Reach out to us and we'll be happy to help!</p>
+            <form class="mt-10 max-w-xl mx-auto" onsubmit="handleSubmit(event)">
+                <div class="mb-4">
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Your Message" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
+                </div>
+                <button type="submit" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4 text-gray-400">
+        <div class="max-w-6xl mx-auto text-center">
+            <p>&copy; 2024 Learning GitHub. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
